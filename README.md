@@ -10,8 +10,22 @@ In [diesem cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Che
 ## TODO2
 - Fachbegriffe OOP erklären (mit Beispielen)
   - abstract (Klassen)
+abstract-Modifizierer in einer Klassendeklaration, um anzugeben, 
+dass die Klasse nur die Basisklasse für andere Klassen sein und nicht selbst instanziiert werden soll. 
+Als abstrakt markierte Member müssen von Klassen, die von nicht abstrakten Klassen abgeleitet wurden, implementiert werden.
+public abstract class A{}
+public class B : A {}
   - abstract (Methoden)
+Verwenden Sie den abstract-Modifizierer in einer Methoden- oder Eigenschaftendeklaration,
+um anzugeben, dass die Methode oder Eigenschaft keine Implementierung enthalten.
+public abstract void MyMethod();
   - virtual
+Das Schlüsselwort virtual wird zum Ändern einer Methoden-, Eigenschaften-, Indexer- oder Ereignisdeklaration verwendet,
+und lässt zu, dass sie in einer abgeleiteten Klasse außer Kraft gesetzt werden. Diese Methode kann z.B. von jeder Klasse, die sie erbt, überschrieben werden:
+public virtual double Area()
+{
+    return x * y;
+}
   - override
   - Polymorphie
 - Wie überschreibt man die Methode `virtual string ToString()`?
